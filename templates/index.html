@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block main %}
+  <div class="row ">
+    {%for video in videos%}
+      <div class="col-12 col-sm-3">
+          <a href="/videoplayer?name={{video.id}}">
+            <div class="card">
+                <div class="card-head">
+                  <img src="{{video.img_location}}"class="card-img-top" alt="video thumbnail">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{video.video_name}}</h5>
+                </div>
+            </div>
+          </a>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

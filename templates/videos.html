@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block main %}
+  <div class="row ">
+    {%for video in videos%}
+      <div class="col-12 col-sm-3">
+            <div class="card">
+                    <div class="card-head">
+                        <img src="{{video.img_location}}"class="card-img-top" alt="video thumbnail">
+                    </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{video.video_name}}</h5>
+                    <form method="post" action="/videos">
+                      <input type="hidden" name="video_id" value="{{video.id}}">
+                      <div class="text-center">
+                        <button class="btn btn-danger" type="submit">DELETE</a>
+                      </div>
+                    </form>
+                </div>
+            </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

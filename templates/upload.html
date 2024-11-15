@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<form  action="/upload" method="post" enctype="multipart/form-data">
+    <div class="mb-3 text-center">
+        <label for="video" class="form-label">Select a mp4 file</label>
+        <input autocomplete="off"  class="form-control mx-auto w-auto" name="video" placeholder="video" type="file">
+    </div>
+    <div class="mb-3 text-center">
+        <label for="thumbnail" class="form-label">Select a png or jpg or jpeg file</label>
+        <input autocomplete="off"  class="form-control mx-auto w-auto" name="thumbnail" placeholder="thumbnail" type="file">
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off"  class="form-control mx-auto w-auto" name="title" placeholder="video title" type="text">
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">submit</button>
+    </div>
+</form>
+{% endblock %}
