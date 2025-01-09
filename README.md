@@ -35,7 +35,3 @@ FlaskTube is a web application built using Flask and Jinja2, designed to mimic t
 * **Scalability:** Explore techniques like caching and load balancing for handling increased traffic.
 * **User Experience:** Optimize the user interface and user experience for a seamless interaction.
 * **Testing:** Write unit and integration tests to ensure code quality and reliability.
-
-**For a more detailed understanding, refer to the code comments and the video demo.**
-
-**[[Video Demo Link](https://youtu.be/YyD5DhGGhto)]**
